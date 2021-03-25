@@ -4,7 +4,7 @@ VBA code to aggregate and transform data downloaded from the Australian Bureau o
 ## What is this for?
 Data downloaded from the ABS with row fields, column fields and wafers populated is arranged into an excel table format with multiple tabs for each wafer. This can sometimes be hard to deal with especially if you want to use pivot table functions. The data being split into multiple tabs for each wafer can also be time consuming to deal with if the user does not want the data broken down the way it has been.
 
-## Example instructions
+## Example
 1. Download and open the file "abs_transform_data.xlsm"
 2. Press the button to see an example 
 
