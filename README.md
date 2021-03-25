@@ -6,7 +6,7 @@ Data downloaded from the ABS with row fields, column fields and wafers populated
 
 ## Example
 1. Download and open the file "abs_transform_data.xlsm"
-2. Press the button to see an example 
+2. Press the button to see how the data will be transformed
 
 ## How to use for your own downloaded ABS data
 1. Open your ABS workbook's developers tab and then press "View Code"
