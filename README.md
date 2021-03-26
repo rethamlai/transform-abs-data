@@ -10,7 +10,7 @@ Data downloaded from the ABS with row fields, column fields and wafers populated
 
 ## How to use this for your own ABS data
 1. Open your ABS workbook's developers tab and then press "View Code"
-  - If the Developers tab is not showing in your Excel Ribbon, please see this: https://support.microsoft.com/en-us/topic/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45
+  - If the Developers tab is not showing in your Excel Ribbon, please see this link on how to open the tab: https://support.microsoft.com/en-us/topic/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45
 
 2. Open any module and then paste the below into the module:
 
@@ -67,7 +67,7 @@ Sub abs_table_builder_data_flat_to_long()
         For I = 1 To colFields
         
             For j = 2 To RowFields + 1
-                ' s & " + " & I & " + " & j & " + " & Index
+                
                 ' Populate row fields
                 Worksheets(sh).Range("A" & j + Index).Value = Worksheets("Data Sheet " & s).Range("B" & 10 + j).Value
                 
