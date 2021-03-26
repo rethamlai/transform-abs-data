@@ -29,7 +29,6 @@ End Function
 Sub abs_table_builder_data_flat_to_long()
 
     Dim RowFields, colFields, sheetCount, Index As Long
-    Dim I As Long
     Dim xCount As Integer
     
     Dim sh As String: sh = "Transformed data"
@@ -47,8 +46,8 @@ Sub abs_table_builder_data_flat_to_long()
     colFields = Worksheets("Data Sheet 0").Rows(10).Cells.SpecialCells(xlCellTypeConstants).Count - 3
     
     ' Count number of worksheets with the string "Data Sheet"
-    For I = 1 To ThisWorkbook.Sheets.Count
-        If Mid(Sheets(I).Name, 1, 10) = "Data Sheet" Then xCount = xCount + 1
+    For k = 1 To ThisWorkbook.Sheets.Count
+        If Mid(Sheets(k).Name, 1, 10) = "Data Sheet" Then xCount = xCount + 1
     Next
     
     sheetCount = CStr(xCount)
