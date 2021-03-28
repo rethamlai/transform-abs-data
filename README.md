@@ -2,17 +2,18 @@
 VBA code to consolidate data downloaded from the Australian Bureau of Statistics (ABS) TableBuilder into a more conveninent format for pivot table use.
 
 ## What is this for?
-Data downloaded from the ABS with row fields, column fields and wafers populated is arranged into an excel table format with multiple tabs for each wafer. This can sometimes be hard to deal with especially if you want to use pivot table functions. The data being split into multiple tabs for each wafer can also be time consuming to deal with if the user does not want the data broken down the way it has been.
+Data downloaded from the ABS Table Builder with row fields, column fields and wafers populated is arranged into an excel table format with multiple tabs for each wafer. This can sometimes be hard to deal with especially if you want to use pivot table functions. The data being split into multiple tabs for each wafer can also be time consuming to deal with if the user does not want the data broken down the way it has been.
 
 ## Example
 1. Download and open the file "abs_transform_data.xlsm"
 2. Press the button to see how the data will be transformed
 
-## How to use this for your own ABS data
-1. Open your ABS workbook's developers tab and then press "View Code"
+## How to use this for your own ABS TableBuilder data
+1. Open the excel file downloaded from the ABS TableBuilder 
+2. Go to the developers tab and then press "View Code"
   - If the Developers tab is not showing in your Excel Ribbon, please see this link on how to open the tab: https://support.microsoft.com/en-us/topic/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45
 
-2. Open any module and then paste the below into the module:
+3. Open any module on the Project panel (usually located on the left side of the screen) and then paste the below into the module:
 
 ``` Ruby
 Function check_if_sheet_exists(sh As String) As Boolean
